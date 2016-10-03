@@ -3,25 +3,23 @@
 #include "targetver.h"
 #include <stdio.h>
 #include <tchar.h>
-#include <string.h>
+#include <string>
 #include <iostream>
 #include <vector>
 #include <iomanip>
+#include <fstream>
 
 using namespace std;
 
+string askUserFileName();
+
 class pses {
 private:
-	unsigned int year;
-	char* adviser = new char;
-	unsigned int dia;
-	unsigned int clockRate;
-
+	string filename;
 public:
-	void setData(int pses_year, char* pses_adviser, int pses_dia, int pses_clockRate);
-	void showData();
-	unsigned int getYear();
-	char* getAdviser();
-	unsigned int getDia();
-	unsigned int getClockRate();
+	ifstream openFileToRead(string filename);
+	ofstream openFileToWrite(string filename);
+	void txtToDat();
+	void Exclusive();
+	void closeFiles();
 };

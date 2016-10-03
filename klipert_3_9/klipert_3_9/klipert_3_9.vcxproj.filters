@@ -32,7 +32,10 @@
     <ClCompile Include="klipert_3_9.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Lab_2_8\Lab_2_8\Lab_2_8\ClassFunctions.cpp">
+    <ClCompile Include="ClassFunctions.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="SupportFunctions.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
   </ItemGroup>
