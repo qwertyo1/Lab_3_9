@@ -25,6 +25,7 @@ void pses::txtToDat()
 {
 	ofstream file;
 	file.open(filename + ".dat");
+	file.close();
 }
 
 void pses::Exclusive()

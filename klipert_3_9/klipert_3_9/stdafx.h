@@ -21,5 +21,4 @@ public:
 	ofstream openFileToWrite(string filename);
 	void txtToDat();
 	void Exclusive();
-	void closeFiles();
 };
